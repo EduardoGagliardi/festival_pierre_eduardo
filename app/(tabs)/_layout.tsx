@@ -61,6 +61,25 @@ const TabsLayout = (): React.JSX.Element => {
 					),
 				}}
 			/>
+			<Tabs.Screen
+				name="plan"
+				options={{
+					tabBarLabel: "Plan",
+					tabBarIcon: () => (
+						<Feather name="map" style={styles.tabBarIconStyle} />
+					),
+				}}
+			/>
+
+			<Tabs.Screen
+				name="menu"
+				options={{
+					tabBarLabel: "Menu",
+					tabBarIcon: () => (
+						<Feather name="menu" style={styles.tabBarIconStyle} />
+					),
+				}}
+			/>
 		</Tabs>
 	);
 };
