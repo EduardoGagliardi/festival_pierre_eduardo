@@ -1,0 +1,33 @@
+npm i json-server
+npx json-server db.json
+
+ATTENTION à lancer la commande dans le dossier contenant le fichier json, sinon le dossier public peut être inaccessible
+
+Pour forcer, la mise à jour ou l'affichage, lancer le serveur, effectuer un changement dans le fichier JSON, puis sauvegarder
+
+http://localhost:3000/countries
+
+http://localhost:3000/music_types
+http://localhost:3000/music_types?id=1
+
+http://localhost:3000/stages_types_stages?_embed=stage_type&_embed=stage
+
+http://localhost:3000/stages
+http://localhost:3000/stages?_embed=stage_type
+
+http://localhost:3000/artists
+http://localhost:3000/artists?_embed=music_type
+http://localhost:3000/artists?slug=sting&_embed=music_type
+
+http://localhost:3000/artists_countries?_embed=country&_embed=artist
+http://localhost:3000/artists_countries?artistId=4&_embed=country&_embed=artist
+
+http://localhost:3000/socials
+
+http://localhost:3000/artists_socials?_embed=artist&_embed=social
+http://localhost:3000/artists_socials?artistId=1&_embed=artist&_embed=social
+
+http://localhost:3000/programme?_embed=artist&_embed=stage&_embed=day
+http://localhost:3000/programme?artistId=9&_embed=artist&_embed=stage&_embed=day
+
+http://localhost:3000/img/stages/DSC6937.jpg

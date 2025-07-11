@@ -1,0 +1,1344 @@
+{
+	"countries": [
+		{ "id": 1, "slug": "fr", "name": "France" },
+		{ "id": 2, "slug": "en", "name": "Angleterre" },
+		{ "id": 3, "slug": "gb", "name": "Grande-Bretagne" },
+		{ "id": 4, "slug": "be", "name": "Belgique" },
+		{ "id": 5, "slug": "it", "name": "Italie" },
+		{ "id": 6, "slug": "us", "name": "États-Unis" },
+		{ "id": 7, "slug": "ca", "name": "Canada" },
+		{ "id": 8, "slug": "ch", "name": "Suisse" }
+	],
+	"music_types": [
+		{ "id": 1, "slug": "rock", "name": "Rock" },
+		{ "id": 2, "slug": "pop-rock", "name": "Pop Rock" },
+		{ "id": 3, "slug": "french-music", "name": "Chanson Française" },
+		{ "id": 4, "slug": "rap", "name": "Rap" },
+		{ "id": 5, "slug": "variety", "name": "Varieté" },
+		{ "id": 6, "slug": "pop", "name": "Pop" },
+		{ "id": 7, "slug": "indie-rock", "name": "Indie rock" },
+		{ "id": 8, "slug": "electro-pop", "name": "Electro Pop" },
+		{ "id": 9, "slug": "electro-punk-rock", "name": "Electro Punk/Rock" },
+		{ "id": 10, "slug": "french-indie", "name": "French Indie" }
+	],
+	"stage_types": [
+		{ "id": 1, "slug": "main", "name": "Scènes principales" },
+		{ "id": 2, "slug": "center", "name": "Le centre-ville" },
+		{ "id": 3, "slug": "off", "name": "Le off" },
+		{ "id": 4, "slug": "outdoors", "name": "Hors les murs" }
+	],
+	"socials": [
+		{ "id": 1, "slug": "facebook", "name": "Facebook" },
+		{ "id": 2, "slug": "instagram", "name": "Instagram" },
+		{ "id": 3, "slug": "x-twitter", "name": "X" },
+		{ "id": 4, "slug": "tiktok", "name": "TikTok" },
+		{ "id": 5, "slug": "spotify", "name": "Spotify" }
+	],
+	"days": [
+		{ "id": 1, "date": "2025-07-01" },
+		{ "id": 2, "date": "2025-07-02" },
+		{ "id": 3, "date": "2025-07-03" },
+		{ "id": 4, "date": "2025-07-04" },
+		{ "id": 5, "date": "2025-07-05" },
+		{ "id": 6, "date": "2025-07-06" }
+	],
+	"artists": [
+		{
+			"id": 1,
+			"music_typeId": 1,
+			"slug": "sting",
+			"name": "Sting",
+			"poster": "50739247-50b2-4af8-9de3-e943158bd81e.jpg",
+			"description": [
+				"Au cours de sa brillante carrière, Sting a reçu 17 GRAMMY Awards® et vendu 100 millions d'albums dans le monde entier, à la fois en tant qu'artiste solo parmi les plus originaux au monde et en tant qu'ancien leader du groupe The Police. Compositeur, auteur-compositeur-interprète, acteur, auteur et militant, Sting a également reçu un Golden Globe, quatre nominations aux Oscars, une nomination aux Tony Awards, le Century Award du Billboard Magazine et les Kennedy Center Honors.",
+				"Le soutien de Sting à des organisations de défense des droits de l'homme telles que le Rainforest Fund, Amnesty International et Live Aid reflète la portée universelle de son art. Avec son épouse Trudie Styler, Sting a fondé le Rainforest Fund en 1989 pour protéger les forêts tropicales et les populations indigènes qui y vivent."
+			],
+			"video": "https://www.youtube.com/watch?v=BTGoPRG1CYY"
+		},
+		{
+			"id": 2,
+			"music_typeId": 2,
+			"slug": "julien-dore",
+			"name": "Julien Doré",
+			"poster": "7c65a175-3484-4f26-9767-35659adca483.jpg",
+			"description": [
+				"Après le phénoménal « aimée tour » et son extraordinaire show ayant conquis plus de 600 000 spectateurs à travers une cinquantaine de concerts complets en zéniths et arenas, Julien Doré annonce son grand retour sur scène avec un tout nouveau spectacle !"
+			],
+			"video": "https://www.youtube.com/watch?v=6R4B1yvsYgM"
+		},
+		{
+			"id": 3,
+			"music_typeId": 1,
+			"slug": "franz-ferdinand",
+			"name": "Franz Ferdinand",
+			"poster": "9ed9aa62-27fe-4899-baa7-8aff82eff86d.jpg",
+			"description": [
+				"Depuis ses débuts, à l'époque où le groupe organisait des fêtes clandestines dans des bâtiments désaffectés de Glasgow, on retrouve chez Franz Ferdinand un regard frais, sans fard, tourné vers l'avenir et une perspective transgressive mais toujours avec un amour pour les grandes chansons.",
+				"Leur nouvel album The Human Fear qui sortira le 10 janvier 2025 s’inscrit indubitablement dans cette tradition ; distinct mais nouveau, musicalement et artistiquement, c'est un disque qui va vers l'avant.",
+				"Le groupe sera à sur la scène Cathédrale de Pause Guitare le 2 Juillet 2025 pour un concert rock et dynamique."
+			],
+			"video": "https://www.youtube.com/watch?v=21JuGhzLcz0"
+		},
+		{
+			"id": 4,
+			"music_typeId": 1,
+			"slug": "the-kills",
+			"name": "The Kills",
+			"poster": "fb5b526e-5348-4edd-b447-9903338c61f9.jpg",
+			"description": [
+				"The Kills, stars internationales du rock, dont ils donnent le rythme au genre, façonnent le son de cette époque et redéfinissent ce que peut être la musique rock au XXIe siècle. Ils comptabilisent des centaines de millions de streams sur leurs albums. Ils sont la rare force de la nature qui peut tourner avec Queens Of The Stone Age ou Guns N' Roses et illuminer Coachella. De plus, leur musique a été diffusée dans des dizaines de séries télévisées et de films, dont Children of Men, nominé aux Oscars."
+			],
+			"video": "https://www.youtube.com/watch?v=Ua5rctmS1xQ"
+		},
+		{
+			"id": 5,
+			"music_typeId": 3,
+			"slug": "adele-castillon",
+			"name": "Adèle Castillon",
+			"poster": "a45ecaa1-56f8-460c-a75a-5909f13f88ab.jpg",
+			"description": [
+				"À 20 ans, malgré cette jeunesse insolente qui nimbe son regard brun d’un éclat pur et vif, Adèle Castillon a déjà vécu plusieurs vies, fictionées ou réelles. De quoi nourrir sans effort les textes intimistes d’un premier album racontant sans fard une première rupture amoureuse, les tourments de la dépendance affective et de la dépendance tout court. Le tout avec cette authenticité et cette fraîcheur poétiques qui rendaient déjà irrésistibles les chansons de Vidéoclub, le duo électro pop à la nostalgie très 80’s – façon Odezenne meets Elli et Jacno - qu’elle forma à Nantes avec Matthieu Reynaud, à l’âge de dix-sept ans."
+			],
+			"video": "https://www.youtube.com/watch?v=WYSgKfDvP2s"
+		},
+		{
+			"id": 6,
+			"music_typeId": 3,
+			"slug": "ben-mazue",
+			"name": "Ben Mazué",
+			"poster": "1d0f1886-de35-41b2-86f4-5a8fa010b1b1.jpg",
+			"description": [
+				"Après son album Paradis sorti en 2020, Ben Mazué sort un nouveau titre en 2024 « Après L'Amour ». Artiste envoûtant et talentueux, il sera sur la scène Pratgraussals de Pause Guitare le 3 Juillet 2025."
+			],
+			"video": "https://www.youtube.com/watch?v=6RgsgIgk0YE"
+		},
+		{
+			"id": 7,
+			"music_typeId": 4,
+			"slug": "carbonne",
+			"name": "Carbonne",
+			"poster": "3c165840-087e-4f9e-bb44-d5c6d643b1f8.jpg",
+			"description": [
+				"Carbonne sur scène, c’est une expérience unique. Avec la sortie de son EP « Par Nous Mêmes » et son tube Imagine, Carbonne affine son identité et nourrit un projet musical hybride et ambitieux."
+			],
+			"video": "https://www.youtube.com/watch?v=iuSUZyTWi6o"
+		},
+		{
+			"id": 8,
+			"music_typeId": 6,
+			"slug": "dinaa",
+			"name": "Dinaa",
+			"poster": "3dbd8b34-f85a-4230-8be7-a62bb61833dc.jpg",
+			"description": [
+				"Dinaa, jeune artiste de 19 ans, captive par son aura, sa voix unique et sa plume mature. Autrice-compositrice talentueuse, elle s'accompagne à la guitare et a été découverte grâce à une reprise émouvante de « Angoisse » de A2H, qui l'a immédiatement signée sur son label après l'avoir entendue jouer en live. Le label DEMAIN a ensuite pris le relais en licence. Son premier titre, « Lisa », a rencontré un immense succès sur TikTok et Instagram, totalisant plus de 1 million de streams.",
+				"Dinaa a poursuivi avec « Cauchemar », une chanson marquante où elle explore avec brio le passage du temps. Récompensée par des festivals prestigieux, elle dévoile son premier projet « Les rêves qui parlent » : 8 titres guitare-voix, sublimés par le clip « Le chant des sirènes », revisitant avec modernité le mythe de Scylla. Une étoile montante de la scène musicale."
+			],
+			"video": "https://www.youtube.com/watch?v=QsUh8UQcyxE"
+		},
+		{
+			"id": 9,
+			"music_typeId": 1,
+			"slug": "etienne-fletcher",
+			"name": "Étienne Fletcher",
+			"poster": "3bb60677-630e-4ea7-92fa-c4bdd252c8e7.jpg",
+			"description": [
+				"Il se dégage de l’univers d’Étienne Fletcher quelque chose de résolument touchant. De douces égratignures dans la voix, l’auteur-compositeur-interprète trouve les mots, les bons, pour traduire en chansons la vie, la mort, et ce qui respire entre les deux. Étienne Fletcher propose un spectacle intime allant du rock au blues, du folk au pop, et portant en son cœur la fierté francophone de l’Ouest canadien."
+			],
+			"video": "https://www.youtube.com/watch?v=m7rZmnnMqs8"
+		},
+		{
+			"id": 10,
+			"music_typeId": 1,
+			"slug": "feu-chatterton",
+			"name": "Feu! Chatterton",
+			"poster": "ac9b2888-6e94-4d4f-8390-24cc3e432a5e.jpg",
+			"description": [
+				"Feu! Chatterton est de retour !",
+				"Trois ans après la sortie de leur album iconique « Palais d’argile », couronné d’un disque de platine, de multiples nominations aux Victoires de la musique, et d'une tournée triomphale, les Feu! Chatterton reviennent prendre la scène, ce lieu qu'ils habitent si bien, où ils s'illustrent par leur intensité et leur grâce et qui les lie si intimement à leur public.",
+				"Cette tournée des festivals, sera l’occasion pour les cinq garçons de vous dévoiler, en avant-première, quelques morceaux de leur album à venir…"
+			],
+			"video": "https://www.youtube.com/watch?v=z1DaJogllx8"
+		},
+		{
+			"id": 11,
+			"music_typeId": 5,
+			"slug": "kimberose",
+			"name": "Kimberose",
+			"poster": "9009223f-8a3e-413d-b176-281b18dabab7.jpg",
+			"description": [
+				"Sa voix convoque instantanément la mémoire des divas du jazz et de la soul, de Billie Holiday à Amy Winehouse en passant par Lauryn Hill. S’ajoute à cela son instinct pop qui se développe via les albums des Destiny’s Child ou ceux de Madonna.",
+				"KIMBEROSE est une chanteuse sidérante, une tornade de feeling, revisitant la musique avec vigueur et modernité."
+			],
+			"video": "https://www.youtube.com/watch?v=_m7X_hWmmqE"
+		},
+		{
+			"id": 12,
+			"music_typeId": 1,
+			"slug": "ko-ko-mo",
+			"name": "KO KO MO",
+			"poster": "91ca402d-fe96-45fb-817b-40afa2aac62c.jpg",
+			"description": [
+				"KO KO MO c’est un peu comme si le yin et le yang se retrouvaient sur scène pour fusionner et électriser le public au cours d’un show exaltant. Après 10 ans et plus de 600 concerts mémorables aux quatre coins de la planète, leur dernière tournée les a menés dans presque toutes les salles de France, à guichets fermés.",
+				"Ils ont galvanisé et fait danser des dizaines de milliers de personnes dans les plus prestigieux festivals. Ils ont aussi été adoubés par des monuments du rock (Jack White, -M-, Shaka Ponk, Rival Sons, Royal Republic…) en assurant leurs 1ères parties, devant de nouveaux fans conquis."
+			],
+			"video": "https://www.youtube.com/watch?v=Tjv88nUPjrY"
+		},
+		{
+			"id": 13,
+			"music_typeId": 6,
+			"slug": "l-imperatrice",
+			"name": "L'Impératrice",
+			"poster": "739552d9-3a0c-4776-92dd-0aca02064cf4.jpg",
+			"description": [
+				"Élégante et majestueuse, L'Impératrice a six têtes. Depuis la sortie de leur premier album Matahari, suivi de deux Olympia complets et d’une tournée qui emmène le groupe sur les scènes du monde entier, tout s’est accéléré pour le groupe.",
+				"L’Impératrice a certes gardé le goût de la danse, du groove posé sur une basse virtuose, des synthés vintage et des mélodies pailletées. Mais s’est offert la liberté d’explorer d’autres territoires, de faire un pas de côté avec son deuxième album Tako Tsubo.",
+				"Un album qui lui vaudra le Grand Prix du répertoire Sacem à l’export, une nomination aux Victoires de la Musique, une tournée mondiale en Europe, aux États-Unis et au Mexique, et deux dates dans le très sélectif festival Coachella."
+			],
+			"video": "https://www.youtube.com/watch?v=alB2Hi6V25o"
+		},
+		{
+			"id": 14,
+			"music_typeId": 7,
+			"slug": "la-femme",
+			"name": "La Femme",
+			"poster": "96912022-b8ab-42ae-b861-885ac63eed8e.jpg",
+			"description": [
+				"Après « Psycho Tropical Berlin, Mystères et Paradigmes », le groupe créé par Marlon Magnée et Sacha Got revient avec « Rock Machine », premier album entièrement écrit en anglais.",
+				"Composé ces dernières années lors de différentes tournées autour du monde, ce nouvel LP a été fortement inspiré par l’enchaînement des dates aux Etats Unis.",
+				"« Rock Machine », armé d’un nouveau son électro-arena-rock, est un album de globe-trotteurs prêt à séduire un public international encore plus large. Après une tournée nord-américaine, le groupe sera sur la scène Cathédrale de Pause Guitare le 1er Juillet 2025."
+			],
+			"video": "https://www.youtube.com/watch?v=k9c_CgLOn7s"
+		},
+		{
+			"id": 15,
+			"music_typeId": 1,
+			"slug": "lou-k",
+			"name": "Lou K",
+			"poster": "24b1be21-2bb8-4a74-a28d-d3e7b0166ecc.jpg",
+			"description": [
+				"Une vision acide, une guitare qui rugit, des histoires de monstres dans la nuit. Lou K c’est Lucie Lefauconnier, chanteuse guitariste, poète, peintre et metteuse en scène.",
+				"Aujourd’hui entourée de Raphaële Germser à la basse ( Monolithe noir, Wax Tailor, Birdpen…) et Audrey Dechèvre à la batterie ( Faust, Maple Paper…) elles racontent les peurs, l'obscurité et les différentes formes de violences avec douceur ou rugissement profond. Les textes sont frontaux, crus, leur poésie apporte quelques nappes de douceur, de déchirement parfois.",
+				"On y retrouve une mise en image élégante et puissante ; de la souffrance d’être dépossédé de soi et de son corps. Un punk sans artifice, brut, viscéral et captivant."
+			],
+			"video": "https://www.youtube.com/watch?v=nUQV17y08bU"
+		},
+		{
+			"id": 16,
+			"music_typeId": 8,
+			"slug": "lucky-love",
+			"name": "Lucky Love",
+			"poster": "fec3594e-1757-4576-a7f7-bd3c236e1051.jpg",
+			"description": [
+				"Lucky Love c’est une fureur de vivre, un parcours d’une intensité folle bercé de rencontres inespérées, extraordinaires et magiques. A côtoyer laissés-pour-compte et passeurs d’art (de la danseuse étoile Marie-Agnès Gillot au créateur de mode John Galliano) il a vite compris qu’aucune école au monde ne lui aurait permis de se dérober à sa personnalité hors-norme. Un seul choix s’offre désormais à lui : composer sa propre partition à travers la musique. Une chanson « Masculinity » filmée lors d’un concert, et ce sont les réseaux sociaux qui s’affolent aux quatre coins du monde. “What about my masculinity? What is wrong with my body ?”: de l’Iran aux USA en passant par l’Ukraine, ils seront des millions à se reconnaitre dans ses paroles et à travers le personnage de Lucky Love aussi intrigant que charismatique. Son premier album “I DON’T CARE IF IT BURNS » est sorti le 15 novembre."
+			],
+			"video": "https://www.youtube.com/watch?v=hzwO7VJDSAo"
+		},
+		{
+			"id": 17,
+			"music_typeId": 7,
+			"slug": "matilda-mann",
+			"name": "Matilda Mann",
+			"poster": "382af6e7-99f3-4604-8e57-35b4f360d647.jpg",
+			"description": [
+				"Auteure-compositrice-interprète britannique, Matilda Mann chante sa vulnérabilité, son enfance, l'amour, mais aussi la désobéissance, ses amitiés et sa famille.",
+				"Avec son premier album « Roxwell », elle nous dévoile des titres mêlant pop indé, folk, et punk qui sauront éblouir la Grande Scène de Pratgraussals. "
+			],
+			"video": "https://www.youtube.com/watch?v=mznT6F6Vwjg"
+		},
+		{
+			"id": 18,
+			"music_typeId": 3,
+			"slug": "philippe-katerine",
+			"name": "Philippe Katerine",
+			"poster": "852e0f27-dfef-46d6-9348-069677e21043.jpg",
+			"description": [
+				"Philippe Katerine est de retour sur scène en 2025 avec le « Zouzou Tour » avec son nouvel album « Zouzou ».",
+				"Le chanteur décalé est toujours surprenant, connu pour son style unique et ses performances inattendues fait à nouveau parler de lui en 2024 par sa prestation remarquée lors de la cérémonie d'ouverture des Jeux Olympiques et ses apparences médiatiques mêlant humour et poésie.",
+				"Il sera sur la scène Cathédrale de Pause Guitare le 1er Juillet 2025 pour un show décalé et une ambiance électrique."
+			],
+			"video": "https://www.youtube.com/watch?v=N-Ro03zmgJs"
+		},
+		{
+			"id": 19,
+			"music_typeId": 3,
+			"slug": "santa",
+			"name": "Santa",
+			"poster": "e35073dc-82be-4011-903e-21a3f09ba95f.jpg",
+			"description": [
+				"Santa a touché les cœurs avec son immense « Popcorn Salé », certifié diamant, et les fait danser avec son nouveau titre « Recommence-moi ! »",
+				"C’est avec un fulgurant premier EP à son nom, « 999 », entièrement en français, qu’elle exprime une facette artistique qu’elle n’a jamais dévoilée auparavant.",
+				"Cet EP augure superbement de l’album de Santa, Recommence-Moi, sorti en 2024. Elle sera sur la scène Pratgraussals de Pause Guitare le 4 Juillet 2025."
+			],
+			"video": "https://www.youtube.com/watch?v=lrIyw4xO8v4"
+		},
+		{
+			"id": 20,
+			"music_typeId": 4,
+			"slug": "sch",
+			"name": "SCH",
+			"poster": "48cd703f-0baf-4368-97e7-7667dd798bc3.jpg",
+			"description": [
+				"Il y a deux ans, SCH signait un retour en grande pompe avec le premier volet de la saga JVLIVS. Deux ans plus tard, après avoir tenu en haleine ses fans avec l’ambitieux « ROOFTOP » et sa brillante participation à ’13 Organisé’, SCH décide enfin d’assouvir les attentes d’un public, toujours plus nombreux.",
+				"En explosant son record de lancement, SCH prouve une nouvelle fois, que son album « JVLIVS II » sorti en Mars 2021, est sans l’ombre d’un doute, le plus attendu de l’année sur la scène Rap FR. Il sera certifié disque d’or en 4 jours seulement, et comptabilisera plus de 60 000 ventes en première semaine."
+			],
+			"video": "https://www.youtube.com/watch?v=GhWIgc1Cgxg"
+		},
+		{
+			"id": 21,
+			"music_typeId": 9,
+			"slug": "the-bloody-beetroots",
+			"name": "The Bloody Beetroots (DJ Set)",
+			"poster": "c2f2f65d-ad02-4b91-a8c1-ef3812a668cf.jpg",
+			"description": [
+				"The Bloody Beetroots, pionnier dans l'univers électro, a été fondé en 2005 par Sir Bob Cornelius Rifo, un musicien et producteur italien.",
+				"Mélangeant l’électro, le punk rock et le dance, il collabore avec les plus grands, comme Paul McCartney, Tommy Lee, Snoop Dogg, Metallica, ou encore The Prodigy.",
+				"Mélangeant l’électro, le punk rock et le dance, il collabore avec les plus grands, comme Paul McCartney, Tommy Lee, Snoop Dogg, Metallica, ou encore The Prodigy."
+			],
+			"video": "https://www.youtube.com/watch?v=dcbTC-qa65Q"
+		},
+		{
+			"id": 22,
+			"music_typeId": 1,
+			"slug": "the-liminanas",
+			"name": "The Limiñanas",
+			"poster": "80f5ad6e-6f89-4091-be04-15db9a74df24.jpg",
+			"description": [
+				"The Limiñanas c'est ce couple rock incontournable, toujours porté par une envie chevillée au corps de nous embarquer dans son univers teinté de rock sixties et de psychédélisme, empreint d’un esthétisme cinématographique rappelant les grandes heures du cinéma italien."
+			],
+			"video": "https://www.youtube.com/watch?v=Ia5b83FlSgU"
+		},
+		{
+			"id": 23,
+			"music_typeId": 10,
+			"slug": "yoa",
+			"name": "Yoa",
+			"poster": "9e13c446-c58e-4b9e-ab1b-bbeb8500998b.jpg",
+			"description": [
+				"Parisienne désabusée de 25 ans aux origines suisses, Yoa grandit à Paris. Très tot, le cinéma et la musique occupent une place importante dans sa vie, notamment grace aux cours de piano qu’elle suit dès l’age de 7 ans.",
+				"S’inspirant autant de Billie Eilish ou de FKA Twigs, elle passe son temps dans sa chambre pour écrire, composer et enregistrer ses premiers morceaux. Les années passent, elle aiguise sa voix suave et fragile, ses textes gagnent en poésie et les prods deviennent de plus en plus électro.",
+				"Après la sortie de son dernier EP « Nulle » en juin 2024 et un été en festivals, Yoa sera en tournée dans toute la France de 2024 à 2025."
+			],
+			"video": "https://www.youtube.com/watch?v=X_pzk2-TH_I"
+		},
+		{
+			"id": 24,
+			"music_typeId": 1,
+			"slug": "yodelice",
+			"name": "Yodelice",
+			"poster": "82538df3-b978-41e6-a522-8c28f85741f7.jpg",
+			"description": [
+				"Yodelice entame sa tournée Psycho Fuzz. Artiste protéiforme, c’est avec une grande liberté que son amour des guitares, des boîtes à rythmes et des synthétiseurs l’ont amené au coeur même d’une proposition scénique hybride et singulière : seul dans un décor de chambre anéchoïque, entouré de ses machines et de sa guitare, il crée sa propre formule électronique et définitivement rock, un genre de Machine-A-Billy. Une performance unique qui a trouvé son écrin : une scénographie pensée et éclairée par le talent de Pierre Claude (Air, Phoenix, Gesaffelstein…).",
+				"C’est ce monde que vous pourrez découvrir sur scène et sur un album à venir."
+			],
+			"video": "https://www.youtube.com/watch?v=kHiilYxb128"
+		}
+	],
+	"artists_countries": [
+		{ "id": 1, "artistId": 1, "countryId": 2 },
+		{ "id": 2, "artistId": 2, "countryId": 1 },
+		{ "id": 3, "artistId": 3, "countryId": 3 },
+		{ "id": 4, "artistId": 4, "countryId": 3 },
+		{ "id": 5, "artistId": 4, "countryId": 6 },
+		{ "id": 6, "artistId": 5, "countryId": 1 },
+		{ "id": 7, "artistId": 6, "countryId": 1 },
+		{ "id": 8, "artistId": 7, "countryId": 1 },
+		{ "id": 9, "artistId": 8, "countryId": 1 },
+		{ "id": 10, "artistId": 9, "countryId": 1 },
+		{ "id": 11, "artistId": 9, "countryId": 7 },
+		{ "id": 12, "artistId": 10, "countryId": 1 },
+		{ "id": 13, "artistId": 11, "countryId": 1 },
+		{ "id": 14, "artistId": 12, "countryId": 1 },
+		{ "id": 15, "artistId": 13, "countryId": 1 },
+		{ "id": 16, "artistId": 14, "countryId": 1 },
+		{ "id": 17, "artistId": 15, "countryId": 4 },
+		{ "id": 18, "artistId": 16, "countryId": 1 },
+		{ "id": 19, "artistId": 17, "countryId": 3 },
+		{ "id": 20, "artistId": 18, "countryId": 1 },
+		{ "id": 21, "artistId": 19, "countryId": 1 },
+		{ "id": 22, "artistId": 20, "countryId": 1 },
+		{ "id": 23, "artistId": 21, "countryId": 5 },
+		{ "id": 24, "artistId": 22, "countryId": 1 },
+		{ "id": 25, "artistId": 23, "countryId": 1 },
+		{ "id": 26, "artistId": 23, "countryId": 8 },
+		{ "id": 27, "artistId": 24, "countryId": 1 }
+	],
+	"artists_socials": [
+		{
+			"id": 1,
+			"artistId": 1,
+			"socialId": 1,
+			"url": "https://www.facebook.com/sting"
+		},
+		{
+			"id": 2,
+			"artistId": 1,
+			"socialId": 2,
+			"url": "https://www.instagram.com/theofficialsting/"
+		},
+		{
+			"id": 3,
+			"artistId": 1,
+			"socialId": 3,
+			"url": "https://x.com/OfficialSting"
+		},
+		{
+			"id": 4,
+			"artistId": 1,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@official_sting"
+		},
+		{
+			"id": 5,
+			"artistId": 1,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/0Ty63ceoRnnJKVEYP0VQpk?si=bufEwlrxR5aOHWWV9oYc8A"
+		},
+		{
+			"id": 6,
+			"artistId": 2,
+			"socialId": 1,
+			"url": "https://www.facebook.com/juliendoreofficiel"
+		},
+		{
+			"id": 7,
+			"artistId": 2,
+			"socialId": 2,
+			"url": "https://www.instagram.com/jdoreofficiel/"
+		},
+		{
+			"id": 8,
+			"artistId": 2,
+			"socialId": 3,
+			"url": "https://x.com/jdoreofficiel"
+		},
+		{
+			"id": 9,
+			"artistId": 2,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@jdoreofficiel"
+		},
+		{
+			"id": 10,
+			"artistId": 2,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/6jStlKLflTMUN6BajxrNlj?si=NUZavTjGQeu6wOxAVlddTg"
+		},
+		{
+			"id": 11,
+			"artistId": 3,
+			"socialId": 1,
+			"url": "https://www.facebook.com/officialfranzferdinand"
+		},
+		{
+			"id": 12,
+			"artistId": 3,
+			"socialId": 2,
+			"url": "https://www.instagram.com/franz_ferdinand/"
+		},
+		{
+			"id": 13,
+			"artistId": 3,
+			"socialId": 3,
+			"url": "https://x.com/Franz_Ferdinand"
+		},
+		{
+			"id": 14,
+			"artistId": 3,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@officialfranzferdinand"
+		},
+		{
+			"id": 15,
+			"artistId": 3,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/0XNa1vTidXlvJ2gHSsRi4A?si=9p-AYihnSsegjcX7WlyCXg"
+		},
+		{
+			"id": 16,
+			"artistId": 4,
+			"socialId": 1,
+			"url": "https://www.facebook.com/TheKills/?locale=fr_FR"
+		},
+		{
+			"id": 17,
+			"artistId": 4,
+			"socialId": 2,
+			"url": "https://www.instagram.com/thekills/"
+		},
+		{ "id": 18, "artistId": 4, "socialId": 3, "url": "https://x.com/thekills" },
+		{
+			"id": 19,
+			"artistId": 4,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@thekillsofficial"
+		},
+		{
+			"id": 20,
+			"artistId": 4,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/5BYuBzqmTXwUDw2rYkwExr?si=tXbcmWtISbWjmI7AnHnVOA"
+		},
+		{
+			"id": 21,
+			"artistId": 5,
+			"socialId": 1,
+			"url": "https://www.facebook.com/adelecastillonmusique/"
+		},
+		{
+			"id": 22,
+			"artistId": 5,
+			"socialId": 2,
+			"url": "https://www.instagram.com/adelecastillon/"
+		},
+		{
+			"id": 23,
+			"artistId": 5,
+			"socialId": 3,
+			"url": "https://x.com/adelecastillon"
+		},
+		{
+			"id": 24,
+			"artistId": 5,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@adelecastillon?lang=fr"
+		},
+		{
+			"id": 25,
+			"artistId": 5,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/4ueh4hmRvt62k4BgP8dIS0?si=qFuteUIHQreL4Dh3KKo2NQ"
+		},
+		{
+			"id": 26,
+			"artistId": 6,
+			"socialId": 1,
+			"url": "https://www.facebook.com/benmazueofficiel"
+		},
+		{
+			"id": 27,
+			"artistId": 6,
+			"socialId": 2,
+			"url": "https://www.instagram.com/benmazue/"
+		},
+		{ "id": 28, "artistId": 6, "socialId": 3, "url": "https://x.com/BenMaZUe" },
+		{
+			"id": 29,
+			"artistId": 6,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/73BDzWqbf1grbgQ8xYn2ou"
+		},
+		{
+			"id": 30,
+			"artistId": 7,
+			"socialId": 1,
+			"url": "https://www.facebook.com/carbonne.p/"
+		},
+		{
+			"id": 31,
+			"artistId": 7,
+			"socialId": 2,
+			"url": "https://www.instagram.com/carbonne.14/"
+		},
+		{
+			"id": 32,
+			"artistId": 7,
+			"socialId": 3,
+			"url": "https://x.com/carbonne_14?lang=fr"
+		},
+		{
+			"id": 33,
+			"artistId": 7,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@carbonne14?lang=fr"
+		},
+		{
+			"id": 34,
+			"artistId": 7,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/2t0frJEIdex2PTwuLlGxDD?si=Hqll1eqVSi2c6BVTXm5K5A"
+		},
+		{
+			"id": 35,
+			"artistId": 8,
+			"socialId": 1,
+			"url": "https://www.facebook.com/dinaaofficiel/"
+		},
+		{
+			"id": 36,
+			"artistId": 8,
+			"socialId": 2,
+			"url": "https://www.instagram.com/dinaamusic_/"
+		},
+		{
+			"id": 37,
+			"artistId": 8,
+			"socialId": 3,
+			"url": "https://x.com/DinaaOfficiel"
+		},
+		{
+			"id": 38,
+			"artistId": 8,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@dinaamusic_"
+		},
+		{
+			"id": 39,
+			"artistId": 8,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/0shR2PS00avJ6Wp3npUBwS?autoplay=true"
+		},
+		{
+			"id": 40,
+			"artistId": 9,
+			"socialId": 1,
+			"url": "https://www.facebook.com/etiennefletchermusic/"
+		},
+		{
+			"id": 41,
+			"artistId": 9,
+			"socialId": 2,
+			"url": "https://www.instagram.com/etiennefletcher/"
+		},
+		{
+			"id": 42,
+			"artistId": 9,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/68ibtaRdKqh961GSlju8H2?autoplay=true"
+		},
+		{
+			"id": 43,
+			"artistId": 10,
+			"socialId": 1,
+			"url": "https://www.facebook.com/feu.chatterton/"
+		},
+		{
+			"id": 44,
+			"artistId": 10,
+			"socialId": 2,
+			"url": "https://www.instagram.com/feuchatterton/"
+		},
+		{
+			"id": 45,
+			"artistId": 10,
+			"socialId": 3,
+			"url": "https://x.com/FeuChatterton"
+		},
+		{
+			"id": 46,
+			"artistId": 10,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/538TfjnJpRXI80MHYWfKlo?autoplay=true"
+		},
+		{
+			"id": 47,
+			"artistId": 11,
+			"socialId": 1,
+			"url": "https://www.facebook.com/kimberosemusic/"
+		},
+		{
+			"id": 48,
+			"artistId": 11,
+			"socialId": 2,
+			"url": "https://www.instagram.com/kimberosemusic/"
+		},
+		{
+			"id": 49,
+			"artistId": 11,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@kimberoseofficiel"
+		},
+		{
+			"id": 50,
+			"artistId": 11,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/6CpNuq0rsIj6Il313E6lKL?si=z_SVai5yS4Obt1TzmnUH2w"
+		},
+		{
+			"id": 51,
+			"artistId": 12,
+			"socialId": 1,
+			"url": "https://www.facebook.com/thisiskokomo/"
+		},
+		{
+			"id": 52,
+			"artistId": 12,
+			"socialId": 2,
+			"url": "https://www.instagram.com/thisiskokomo/"
+		},
+		{
+			"id": 53,
+			"artistId": 12,
+			"socialId": 5,
+			"url": "https://open.spotify.com/artist/37njHbDvYnaoRWbRwVTdaZ"
+		},
+		{
+			"id": 54,
+			"artistId": 13,
+			"socialId": 1,
+			"url": "https://www.facebook.com/Je.Suis.Imperatrice?locale=fr_FR"
+		},
+		{
+			"id": 55,
+			"artistId": 13,
+			"socialId": 2,
+			"url": "https://www.instagram.com/l.imperatrice/"
+		},
+		{
+			"id": 56,
+			"artistId": 13,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/4PwlsrN0t5mLN0C827cbEU?si=vlBgv2ttRZKPNDsBHNOF5Q"
+		},
+		{
+			"id": 57,
+			"artistId": 14,
+			"socialId": 1,
+			"url": "https://www.facebook.com/lafemmeressort?locale=fr_FR"
+		},
+		{
+			"id": 58,
+			"artistId": 14,
+			"socialId": 2,
+			"url": "https://www.instagram.com/la_femme__musique/"
+		},
+		{
+			"id": 59,
+			"artistId": 14,
+			"socialId": 4,
+			"url": "https://tiktok.com/@la_femme__musique?lang=fr"
+		},
+		{
+			"id": 60,
+			"artistId": 14,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/5VTWoYYizcOY3uIKnxeCGI?si=AMGrDNd3QRmxdJc0i2mEUw"
+		},
+		{
+			"id": 61,
+			"artistId": 15,
+			"socialId": 1,
+			"url": "https://www.facebook.com/LouKmusic.bx"
+		},
+		{
+			"id": 62,
+			"artistId": 15,
+			"socialId": 2,
+			"url": "https://www.instagram.com/lou_k_music/"
+		},
+		{
+			"id": 63,
+			"artistId": 15,
+			"socialId": 5,
+			"url": "https://open.spotify.com/artist/1QC92"
+		},
+		{
+			"id": 64,
+			"artistId": 16,
+			"socialId": 1,
+			"url": "https://www.facebook.com/lucas.bruyere/"
+		},
+		{
+			"id": 65,
+			"artistId": 16,
+			"socialId": 2,
+			"url": "https://www.instagram.com/thisisluckylove/"
+		},
+		{
+			"id": 66,
+			"artistId": 16,
+			"socialId": 3,
+			"url": "https://x.com/thisisluckylov_"
+		},
+		{
+			"id": 67,
+			"artistId": 16,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@thisisluckylove?lang=fr"
+		},
+		{
+			"id": 68,
+			"artistId": 16,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/3EApXFqJtyNGLwOVFKvhMP?si=NJEYQYFUSiO9RV8u4tCX-w"
+		},
+		{
+			"id": 69,
+			"artistId": 17,
+			"socialId": 1,
+			"url": "https://www.facebook.com/matildathemann"
+		},
+		{
+			"id": 70,
+			"artistId": 17,
+			"socialId": 2,
+			"url": "https://www.instagram.com/matildathemann/"
+		},
+		{
+			"id": 71,
+			"artistId": 17,
+			"socialId": 3,
+			"url": "https://x.com/matildathemann"
+		},
+		{
+			"id": 72,
+			"artistId": 17,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@matildathemann"
+		},
+		{
+			"id": 73,
+			"artistId": 17,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/76oY04bOzECod3aGVTDtzu?si=cnM7ynnkQwSgjos-kYZIiA&nd=1&dlsi=ff63ca2e522e4b15"
+		},
+		{
+			"id": 74,
+			"artistId": 18,
+			"socialId": 1,
+			"url": "https://www.facebook.com/philippekaterine?locale=fr_FR"
+		},
+		{
+			"id": 75,
+			"artistId": 18,
+			"socialId": 2,
+			"url": "https://www.instagram.com/philippekaterine/"
+		},
+		{
+			"id": 76,
+			"artistId": 18,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@philippekaterineofficel"
+		},
+		{
+			"id": 77,
+			"artistId": 18,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/61NKNrhSMTYg2q0f3vS46e?si=qupgSflfRz6jv2U1cEp6sQ"
+		},
+		{
+			"id": 78,
+			"artistId": 19,
+			"socialId": 1,
+			"url": "https://www.facebook.com/jesuissanta999?locale=fr_FR"
+		},
+		{
+			"id": 79,
+			"artistId": 19,
+			"socialId": 2,
+			"url": "https://www.instagram.com/jesuissanta999/"
+		},
+		{
+			"id": 80,
+			"artistId": 19,
+			"socialId": 3,
+			"url": "https://x.com/jesuissanta999"
+		},
+		{
+			"id": 81,
+			"artistId": 19,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@jesuissanta"
+		},
+		{
+			"id": 82,
+			"artistId": 19,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/5Vf6gyVzfo8TnzrPRBg3qo?si=DWW083YQRTK0DBrYSSXgiw"
+		},
+		{
+			"id": 83,
+			"artistId": 20,
+			"socialId": 1,
+			"url": "https://www.facebook.com/schmathafack"
+		},
+		{
+			"id": 84,
+			"artistId": 20,
+			"socialId": 2,
+			"url": "https://www.instagram.com/sch/"
+		},
+		{
+			"id": 85,
+			"artistId": 20,
+			"socialId": 3,
+			"url": "https://x.com/Sch_Mathafack"
+		},
+		{
+			"id": 86,
+			"artistId": 20,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@sch"
+		},
+		{
+			"id": 87,
+			"artistId": 20,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/2kXKa3aAFngGz2P4GjG5w2?si=mNj2iS9sTU-qSTqKLZQP5A"
+		},
+		{
+			"id": 88,
+			"artistId": 21,
+			"socialId": 1,
+			"url": "https://www.facebook.com/thebloodybeetroots"
+		},
+		{
+			"id": 89,
+			"artistId": 21,
+			"socialId": 2,
+			"url": "https://www.instagram.com/thebloodybeetrootsofficial/"
+		},
+		{
+			"id": 90,
+			"artistId": 21,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@bloodybeetroots"
+		},
+		{
+			"id": 91,
+			"artistId": 21,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/0QJKELJZZuLAjqLOOixJm5?si=zZna3vFzQLGRAQFVx0dYLQ&nd=1&dlsi=f07b3fbfab8a431d"
+		},
+		{
+			"id": 92,
+			"artistId": 22,
+			"socialId": 1,
+			"url": "https://www.facebook.com/theliminanas?locale=fr_FR"
+		},
+		{
+			"id": 93,
+			"artistId": 22,
+			"socialId": 2,
+			"url": "https://www.instagram.com/the_liminanas/"
+		},
+		{
+			"id": 94,
+			"artistId": 22,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/2joJCoCL4EmiVqic3vZn7n?si=NNUdh4WZRfOKpwAsNVIGOg"
+		},
+		{
+			"id": 95,
+			"artistId": 23,
+			"socialId": 1,
+			"url": "https://www.facebook.com/yoamusique/"
+		},
+		{
+			"id": 96,
+			"artistId": 23,
+			"socialId": 2,
+			"url": "https://www.instagram.com/yoamusique/"
+		},
+		{
+			"id": 97,
+			"artistId": 23,
+			"socialId": 3,
+			"url": "https://x.com/yoamusique"
+		},
+		{
+			"id": 98,
+			"artistId": 23,
+			"socialId": 4,
+			"url": "https://www.tiktok.com/@yoamusique"
+		},
+		{
+			"id": 99,
+			"artistId": 23,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/7d1ctWXfrUvAe804Zld3Gy?si=p7zG2OSxQyOBOYfCDG14Pw"
+		},
+		{
+			"id": 100,
+			"artistId": 24,
+			"socialId": 1,
+			"url": "https://www.facebook.com/Yodelice?locale=fr_FR"
+		},
+		{
+			"id": 101,
+			"artistId": 24,
+			"socialId": 2,
+			"url": "https://www.instagram.com/yodelice/"
+		},
+		{
+			"id": 102,
+			"artistId": 24,
+			"socialId": 5,
+			"url": "https://open.spotify.com/intl-fr/artist/167abweXl3demO9x0VMMeJ?si=6lOnWawsTY-gmjjMaOVpDw"
+		}
+	],
+	"stages": [
+		{
+			"id": 1,
+			"stage_typeId": 1,
+			"slug": "pratgraussals",
+			"name": "Grande Scène – Pratgraussals",
+			"poster": "PG24_J4_Vendredi_Pratgrau_ambiance_©_MC_Marion_Cadillac-4740-WEB-1080px.jpg",
+			"description": [
+				"Pratgrau, pour les intimes, c’est le cœur battant du festival. Depuis 2012, cette grande scène installée sous les pins aligne des concerts XXL, des têtes d’affiche exceptionnelles, et une ambiance qu’on ne retrouve nulle part ailleurs. 17 000 personnes, un village restauration éclectique, qui fait la part belle aux spécialités locales comme aux classiques de festival, et un espace VIP très convoité, réputé pour sa vue imprenable sur la scène et son ambiance.",
+				"Pratgraussals, c’est là que tout bascule en soirée, quand la lumière tombe et que le son monte. Une clairière transformée en arène musicale, à vivre au moins une fois."
+			]
+		},
+		{
+			"id": 2,
+			"stage_typeId": 1,
+			"slug": "parvis-sainte-cecile",
+			"name": "Scène Cathédrale – Parvis Sainte-Cécile",
+			"poster": "DSC6937.jpg",
+			"description": [
+				"Elle fait son grand retour cette année, en plein cœur de la cité épiscopale classée au patrimoine mondial de l’UNESCO. La scène Cathédrale, installée face à Sainte-Cécile, propose trois soirées exceptionnelles dans un cadre unique, sans équivalent. 4 000 personnes, une jauge plus intime, une proximité rare avec les artistes, et une scénographie qui joue avec l’architecture monumentale.",
+				"C’est un format plus resserré, mais pas moins puissant. Une autre façon de vivre le festival, au pied de la brique rouge."
+			]
+		},
+		{
+			"id": 3,
+			"stage_typeId": 2,
+			"slug": "prix-magyd-cherfi",
+			"name": "Prix Magyd Cherfi – Salle de l’Athanor",
+			"poster": "PG24_ATHANOR_MAGYD-CHERFI_Prattseul_Laurence-MASSOL-1536x1024.jpg",
+			"description": [
+				"Le Prix Magyd Cherfi, c’est le dispositif dédié aux artistes émergents. Celui qui, chaque année, met en lumière des talents francophones encore peu connus. Un jury de professionnels du milieu passe chaque projet à la loupe : qualité des textes, présence scénique, compositions, interprétations… rien n’est laissé au hasard.",
+				"La sélection est internationale : Belgique, Suisse, Québec, Outre-mer… La francophonie y est représentée dans toute sa richesse. En 2024, Étienne Fletcher a remporté le prix. Cette année, il ouvre pour Franz Ferdinand. Comme quoi, ce concours peut vraiment changer la donne."
+			]
+		},
+		{
+			"id": 4,
+			"stage_typeId": 2,
+			"slug": "quebecofolies",
+			"name": "Québecofolies – Salle de l’Athanor",
+			"poster": "PG23_ATHANOR_QUEBECOFOLIES_LILIANGINET_3-1.jpg",
+			"description": [
+				"Depuis pas moins de 12 ans, les Québecofolies créent un pont entre Albi et le Canada francophone. Chaque édition accueille plusieurs artistes franco-canadiens, invités à se produire devant le public albigeois et des professionnels européens.",
+				"Ce n’est pas une simple vitrine, c’est une vraie rencontre. D’autres manières de chanter, d’écrire, de monter sur scène. Des voix franches, des textes percutants, des univers à part. C’est souvent ici que se logent les vraies surprises."
+			]
+		},
+		{
+			"id": 5,
+			"stage_typeId": 2,
+			"slug": "academie-charles-cros",
+			"name": "Académie Charles Cros – Salle de l’Athanor",
+			"poster": "PG24_CHARLES-CROS-1536x1025.jpg",
+			"description": [
+				"Cette année, l’Académie Charles Cros remet ses « Coups de cœur Chanson 2025» pendant le festival. Neuf artistes sélectionnés par un jury de professionnels de la chanson francophone sont invités à monter sur scène. Chacun interprète deux titres lors d’une cérémonie ouverte au public.",
+				"Un bel écrin pour ces talents en devenir, ravis de se produire dans un festival connu et reconnu pour défendre la chanson francophone dans toute sa diversité."
+			]
+		},
+		{
+			"id": 6,
+			"stage_typeId": 3,
+			"slug": "scene-pollux",
+			"name": "Scène Pollux – Place de la Trébaille",
+			"poster": "PG24_pollux_Laurence-MASSOL_traitement-photo-1536x1024.png",
+			"description": [
+				"En plein cœur du centre-ville d’Albi, la scène Pollux vient faire vibrer la Place de la Trébaille ! Indépendante, libre, festive, elle incarne l’esprit underground du festival, partagé par Pollux et Pause Guitare. Rock, rap, dub, punk, électro… la programmation est aussi éclectique qu’énergique. On y danse, on y transpire, on y fait de belles découvertes — et on y reste souvent plus longtemps que prévu.",
+				" Cette année, Pollux Asso fête 25 ans d’activisme musical et débarque avec L’Estafette, sa scène guinguette itinérante, pour la première fois à Albi."
+			]
+		},
+		{
+			"id": 7,
+			"stage_typeId": 3,
+			"slug": "scene-acadienne",
+			"name": "Scène Acadienne – Place du Vigan",
+			"poster": "PG24_acadienne_Laurence-MASSOL-1536x1024.jpg",
+			"description": [
+				"La scène acadienne nous emmène dans la province du Nouveau-Brunswick, région francophone du Canada rarement mise en lumière. Ici, pas de folklore figé, mais des artistes qui racontent l’histoire de leur région, qui partagent leurs traditions et leur langue, souvent méconnues de notre public.",
+				"C’est une scène discrète, mais jamais anodine. On y découvre des voix singulières, entre énergie brute et douceur maîtrisée. Une escale à ne pas manquer."
+			]
+		},
+		{
+			"id": 8,
+			"stage_typeId": 3,
+			"slug": "talents-de-quartier",
+			"name": "Talents de Quartier – Place du Vigan",
+			"poster": "PG24_TALENTS_DE_QUARTIER_Richard_STORCHI-1536x1024.jpg",
+			"description": [
+				"Porté par le Service Jeunesse de la Ville d’Albi, Talents de Quartier permet à de jeunes chanteuses et chanteurs de proposer leurs reprises devant le public, accompagnés sur scène par un groupe live. Sélectionnés par un jury de professionnels en amont, ils bénéficient d’un accompagnement à l’année, en se produisant lors de différents événements comme l’Urban Festival, la Fête de la Musique ou encore 100% Live.",
+				"Une première scène, une vraie rencontre, un tremplin pour celles et ceux qui rêvent de live."
+			]
+		},
+		{
+			"id": 9,
+			"stage_typeId": 3,
+			"slug": "de-bars-en-bars",
+			"name": "De Bars en Bars – Albi",
+			"poster": "PG24_J1_Mardi_Bars_en_Bars_artistes_Paranoid_©_MC_Marion_Cadillac-2794-WEB-1080px.jpg",
+			"description": [
+				"Depuis 2015, De Bars en Bars, c’est le premier échelon du parcours d’émergence du festival. Il permet aux artistes de la région de se produire dans les bars partenaires du festival.",
+				"C’est l’occasion de tester ses compos, d’élargir son public et — bonus non négligeable — d’être rémunéré. Le principe est simple : on investit les quartiers d’Albi, on fait trembler les murs des bars et on laisse les décibels couler jusqu’à la nuit noire. C’est un marathon sonore où les festivaliers naviguent d’un bar à l’autre, découvrant des projets émergents dans des lieux emblématiques.",
+				"De la sueur, de la bière, des rires et des décibels. C’est l’ambiance De Bars en Bars."
+			]
+		},
+		{
+			"id": 10,
+			"stage_typeId": 3,
+			"slug": "maison-de-quartier-de-lapanouse",
+			"name": "Maison de Quartier de Lapanouse",
+			"poster": "PG22_Maison-de-quartier_Marion_Cadillac.jpg",
+			"description": [
+				"La Maison de Quartier de Lapanouse devient le temps d’un concert un nouveau point d’ancrage du festival. Une scène de proximité, portée par un lieu engagé au quotidien auprès des habitants.",
+				"C’est un concert en bas de chez soi, un rendez-vous convivial, une proposition artistique là où on ne l’attend pas. Parce que la musique a aussi sa place dans les quartiers."
+			]
+		},
+		{
+			"id": 11,
+			"stage_typeId": 3,
+			"slug": "albeach",
+			"name": "L’Albeach – Salle de L’Athanor",
+			"poster": "PG23_ALBEACH_Laurence-Massol-1536x1022.jpg",
+			"description": [
+				"Chaque matin, l’Albeach devient le point de ralliement des pros du secteur musical. Organisé avec Ulysse Maison d’Artistes, cet espace favorise les échanges, les synergies et les discussions concrètes autour des enjeux de la filière. IA, tendances émergentes, nouveaux modèles… les sujets sont actuels, les échanges ouverts.",
+				"C’est aussi ici que vous, journalistes, venez récupérer vos accréditations.\n Un lieu de réflexion, de réseau, et de futurs projets — parce qu’un festival, c’est aussi faire avancer la musique autrement."
+			]
+		},
+		{
+			"id": 12,
+			"stage_typeId": 3,
+			"slug": "petite-foraine",
+			"name": "La Petite Foraine 2 – Village Enfants, Place du Vigan",
+			"poster": "PG22_VILLAGE-ENFANT_LILIAN-GINET-1.jpg",
+			"description": [
+				"La Petite Foraine, c’est un village d’un autre temps, un brin rétro, un brin magique. Une respiration dans le festival, un espace à hauteur d’enfants, où la fête a le goût de l’imaginaire. Pensé pour les enfants mais qui émerveille aussi les plus grands.",
+				"Au programme cette année :\n Trois baraques foraines signées la Compagnie Alchymère : un stand de tir décalé, une loterie loufoque et une pêche pas comme les autres.\n Un atelier de cirque avec l’association Ivre d’Équilibre, pour jongler, s’équilibrer, tester son audace…\n Des jeux en bois géants, proposés par Tourne-Mioches, à manipuler seul, en famille ou entre copains."
+			]
+		},
+		{
+			"id": 13,
+			"stage_typeId": 4,
+			"slug": "cafe-plum",
+			"name": "Café Plùm – Lautrec",
+			"poster": "PG24_cafeplum_lilianginet-1536x1025.jpg",
+			"description": [
+				"Le Café Plùm, à Lautrec, c’est un lieu hybride comme on les aime : café, librairie, salle de concert… et surtout lieu vivant, toute l’année. Pendant le festival, quelques concerts y sont programmés.",
+				"Ambiance resserrée, accueil généreux. On y mange bien, on y écoute mieux. C’est aussi une façon d’étendre Pause Guitare hors des murs d’Albi, en s’appuyant sur des partenaires engagés pour faire vivre la culture en milieu rural."
+			]
+		},
+		{
+			"id": 14,
+			"stage_typeId": 4,
+			"slug": "fete-du-livre",
+			"name": "Fête du Livre - Pampelonne",
+			"poster": "PG24_Pampelone_Marion_Cadillac.jpg",
+			"description": [
+				"À Pampelonne, l’été rime avec littérature, musique, et bons produits. La Fête du Livre mêle lectures, discussions, gastronomie locale… et un concert Pause Guitare glissé dans la programmation.",
+				"On y vient pour flâner, découvrir, se laisser surprendre. C’est un rendez-vous à part, qui mêle les genres avec simplicité. Une respiration dans le rythme du festival."
+			]
+		}
+	],
+	"stages_types_stages": [
+		{ "id": 1, "stageId": 1, "stage_typeId": 1 },
+		{ "id": 2, "stageId": 2, "stage_typeId": 1 },
+		{ "id": 3, "stageId": 3, "stage_typeId": 2 },
+		{ "id": 4, "stageId": 4, "stage_typeId": 2 },
+		{ "id": 5, "stageId": 5, "stage_typeId": 2 },
+		{ "id": 6, "stageId": 6, "stage_typeId": 3 },
+		{ "id": 7, "stageId": 7, "stage_typeId": 3 },
+		{ "id": 8, "stageId": 8, "stage_typeId": 3 },
+		{ "id": 9, "stageId": 9, "stage_typeId": 3 },
+		{ "id": 10, "stageId": 10, "stage_typeId": 3 },
+		{ "id": 11, "stageId": 11, "stage_typeId": 3 },
+		{ "id": 12, "stageId": 12, "stage_typeId": 3 },
+		{ "id": 13, "stageId": 13, "stage_typeId": 4 },
+		{ "id": 14, "stageId": 14, "stage_typeId": 4 }
+	],
+	"programme": [
+		{
+			"id": 1,
+			"artistId": 1,
+			"stageId": 1,
+			"dayId": 4,
+			"time_start": "21:45",
+			"time_end": "23:15"
+		},
+		{
+			"id": 2,
+			"artistId": 2,
+			"stageId": 1,
+			"dayId": 3,
+			"time_start": "22:00",
+			"time_end": "23:00"
+		},
+		{
+			"id": 3,
+			"artistId": 3,
+			"stageId": 2,
+			"dayId": 2,
+			"time_start": "23:00",
+			"time_end": "00:15"
+		},
+		{
+			"id": 4,
+			"artistId": 4,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "01:00",
+			"time_end": "02:00"
+		},
+		{
+			"id": 5,
+			"artistId": 5,
+			"stageId": 1,
+			"dayId": 3,
+			"time_start": "19:00",
+			"time_end": "20:00"
+		},
+		{
+			"id": 6,
+			"artistId": 6,
+			"stageId": 1,
+			"dayId": 3,
+			"time_start": "20:30",
+			"time_end": "21:30"
+		},
+		{
+			"id": 7,
+			"artistId": 7,
+			"stageId": 2,
+			"dayId": 3,
+			"time_start": "21:15",
+			"time_end": "22:30"
+		},
+		{
+			"id": 8,
+			"artistId": 8,
+			"stageId": 2,
+			"dayId": 1,
+			"time_start": "20:00",
+			"time_end": "20:45"
+		},
+		{
+			"id": 9,
+			"artistId": 9,
+			"stageId": 2,
+			"dayId": 2,
+			"time_start": "20:00",
+			"time_end": "20:45"
+		},
+		{
+			"id": 10,
+			"artistId": 9,
+			"stageId": 13,
+			"dayId": 3,
+			"time_start": "19:00",
+			"time_end": "20:00"
+		},
+		{
+			"id": 11,
+			"artistId": 10,
+			"stageId": 2,
+			"dayId": 1,
+			"time_start": "23:00",
+			"time_end": "00:15"
+		},
+		{
+			"id": 12,
+			"artistId": 11,
+			"stageId": 1,
+			"dayId": 4,
+			"time_start": "23:45",
+			"time_end": "00:45"
+		},
+		{
+			"id": 13,
+			"artistId": 12,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "19:00",
+			"time_end": "20:00"
+		},
+		{
+			"id": 14,
+			"artistId": 13,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "20:30",
+			"time_end": "21:30"
+		},
+		{
+			"id": 15,
+			"artistId": 14,
+			"stageId": 2,
+			"dayId": 2,
+			"time_start": "21:15",
+			"time_end": "22:30"
+		},
+		{
+			"id": 16,
+			"artistId": 15,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "18:00",
+			"time_end": "18:30"
+		},
+		{
+			"id": 17,
+			"artistId": 16,
+			"stageId": 1,
+			"dayId": 4,
+			"time_start": "20:15",
+			"time_end": "21:15"
+		},
+		{
+			"id": 18,
+			"artistId": 17,
+			"stageId": 1,
+			"dayId": 4,
+			"time_start": "19:00",
+			"time_end": "19:45"
+		},
+		{
+			"id": 19,
+			"artistId": 18,
+			"stageId": 2,
+			"dayId": 1,
+			"time_start": "21:15",
+			"time_end": "22:30"
+		},
+		{
+			"id": 20,
+			"artistId": 19,
+			"stageId": 1,
+			"dayId": 3,
+			"time_start": "23:30",
+			"time_end": "00:30"
+		},
+		{
+			"id": 21,
+			"artistId": 20,
+			"stageId": 2,
+			"dayId": 3,
+			"time_start": "23:00",
+			"time_end": "00:15"
+		},
+		{
+			"id": 22,
+			"artistId": 21,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "02:30",
+			"time_end": "03:30"
+		},
+		{
+			"id": 23,
+			"artistId": 22,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "22:00",
+			"time_end": "23:00"
+		},
+		{
+			"id": 24,
+			"artistId": 23,
+			"stageId": 2,
+			"dayId": 3,
+			"time_start": "20:00",
+			"time_end": "20:45"
+		},
+		{
+			"id": 25,
+			"artistId": 24,
+			"stageId": 1,
+			"dayId": 5,
+			"time_start": "23:30",
+			"time_end": "00:30"
+		}
+	]
+}
