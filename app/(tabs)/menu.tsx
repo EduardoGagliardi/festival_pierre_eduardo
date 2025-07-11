@@ -59,17 +59,19 @@ const MenuPage = (): React.JSX.Element => {
 			<View style={styles.section}>
 				<Text style={styles.sectionTitle}>À propos</Text>
 				<View style={styles.listContainer}>
-					{aPropos.map((item) => (
-						<TouchableOpacity
-							key={item.title}
-							style={styles.listItem}
-							activeOpacity={0.7}
-							onPress={item.route ? () => router.push(item.route) : undefined}
-						>
-							<Text style={styles.listItemText}>{item.title}</Text>
-							<Feather name="chevron-right" style={styles.chevron} />
-						</TouchableOpacity>
-					))}
+					{aPropos
+						.filter((item) => item.route)
+						.map((item) => (
+							<TouchableOpacity
+								key={item.title}
+								style={styles.listItem}
+								activeOpacity={0.7}
+								onPress={() => router.push(item.route!)}
+							>
+								<Text style={styles.listItemText}>{item.title}</Text>
+								<Feather name="chevron-right" style={styles.chevron} />
+							</TouchableOpacity>
+						))}
 				</View>
 			</View>
 		</ScrollView>
@@ -90,7 +92,7 @@ const styles = StyleSheet.create({
 		marginBottom: 10,
 	},
 	sectionTitle: {
-		fontFamily: fonts.heading,
+		fontFamily: fonts.subtitle,
 		fontSize: 22,
 		fontWeight: "bold",
 		color: colors.secondary,
@@ -113,7 +115,7 @@ const styles = StyleSheet.create({
 		borderBottomColor: "#ececec",
 	},
 	listItemText: {
-		fontFamily: fonts.heading,
+		fontFamily: fonts.subtitle,
 		fontSize: 17,
 		color: "#111",
 	},
@@ -134,7 +136,7 @@ const styles = StyleSheet.create({
 	bannerText: {
 		color: "#e74c3c",
 		textAlign: "center",
-		fontFamily: fonts.heading,
+		fontFamily: fonts.subtitle,
 		fontSize: 16,
 		lineHeight: 22,
 	},

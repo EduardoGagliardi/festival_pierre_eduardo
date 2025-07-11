@@ -19,7 +19,7 @@ export default function Contact() {
 				<Feather name="x" style={styles.closeIcon} />
 			</TouchableOpacity>
 			<ScrollView contentContainerStyle={{ paddingTop: 80, paddingBottom: 32 }}>
-				<View style={styles.card}>
+				<View style={styles.rd}>
 					<Text style={styles.title}>Contact</Text>
 					<Text style={styles.text}>
 						Contactez l'équipe du festival via ce formulaire ou par email.
