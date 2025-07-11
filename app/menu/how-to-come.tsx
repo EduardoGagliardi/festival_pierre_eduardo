@@ -13,6 +13,7 @@ import {
 	UIManager,
 	View,
 } from "react-native";
+import Accordion from "react-native-collapsible/Accordion";
 import { colors, fonts } from "../../constants/design_constants";
 
 // Enable LayoutAnimation on Android
@@ -43,14 +44,26 @@ const SECTIONS = [
 ];
 
 export default function HowToCome() {
-	const [openSections, setOpenSections] = useState<number[]>([]);
+	const [activeSections, setActiveSections] = useState<number[]>([]);
 
-	const toggleSection = (idx: number) => {
-		LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-		setOpenSections((prev) =>
-			prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx],
-		);
-	};
+	type Section = { title: string; content: string };
+
+	const renderHeader = (section: Section, _: number, isActive: boolean) => (
+		<View style={styles.sectionHeader}>
+			<Text style={styles.sectionTitle}>{section.title}</Text>
+			<Feather
+				name={isActive ? "chevron-up" : "chevron-down"}
+				size={22}
+				color="#222"
+			/>
+		</View>
+	);
+
+	const renderContent = (section: Section) => (
+		<View style={styles.sectionContent}>
+			<Text style={styles.sectionText}>{section.content}</Text>
+		</View>
+	);
 
 	return (
 		<View style={{ flex: 1, backgroundColor: "#ededed" }}>
@@ -82,31 +95,21 @@ export default function HowToCome() {
 					<Text style={styles.bgTitle}>Comment venir ?</Text>
 				</ImageBackground>
 
-				{/* Collapsible sections */}
+				{/* Accordion sections */}
 				<View style={styles.sectionsContainer}>
-					{SECTIONS.map((section, idx) => (
-						<View key={section.title}>
-							<TouchableOpacity
-								style={styles.sectionHeader}
-								onPress={() => toggleSection(idx)}
-								activeOpacity={0.8}
-							>
-								<Text style={styles.sectionTitle}>{section.title}</Text>
-								<Feather
-									name={
-										openSections.includes(idx) ? "chevron-up" : "chevron-down"
-									}
-									size={22}
-									color="#222"
-								/>
-							</TouchableOpacity>
-							{openSections.includes(idx) && (
-								<View style={styles.sectionContent}>
-									<Text style={styles.sectionText}>{section.content}</Text>
-								</View>
-							)}
-						</View>
-					))}
+					<Accordion
+						sections={SECTIONS}
+						activeSections={activeSections}
+						renderHeader={renderHeader}
+						renderContent={renderContent}
+						onChange={setActiveSections}
+						underlayColor="#eee"
+						expandMultiple={true}
+						sectionContainerStyle={{
+							borderBottomWidth: 1,
+							borderBottomColor: "#eee",
+						}}
+					/>
 				</View>
 
 				{/* Banner image */}
