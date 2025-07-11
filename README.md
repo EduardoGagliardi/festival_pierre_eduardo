@@ -15,28 +15,8 @@ Ce projet est une application mobile réalisée dans le cadre d'une évaluation 
 - **Filtrage des artistes d'une scène** : Ajout d'un champ de saisie pour filtrer dynamiquement les artistes par nom sur la scène sélectionnée.
 - **Affichage de l'entrée "Comment venir ?"** : Présentation de l'entrée dans le menu, avec un contenu affiché sous forme d'accordéon (`react-native-collapsible`).
 
-## Installation & Lancement
-1. Cloner le dépôt
-2. Installer les dépendances :
-   ```sh
-   npm install
-   ```
-3. Lancer l'application sur Android :
-   ```sh
-   npx expo run:android
-   ```
-   (Pour iOS, voir la documentation Expo/EAS Build et les prérequis MacOS)
-
-## Prérequis techniques
-- Node.js
-- Expo CLI
-- Android Studio (pour l'émulateur Android)
-- (iOS : Mac + Xcode ou EAS Build)
-
-## Remarques
-- Le fichier `leaflet.html` doit être copié dans `android/app/src/main/assets/` pour le bon fonctionnement de la carte sur Android.
+## Remarque importante
+- **L'adresse IP de l'API doit être changée dans le fichier `api_constant.ts` selon votre configuration réseau locale.**
 - Ce projet est réalisé dans le cadre d'un travail d'équipe et respecte les consignes de l'évaluation.
-
----
 
 *Merci de consulter le code source pour plus de détails sur l'implémentation.* 

@@ -1,6 +1,6 @@
 import { FontAwesome6 } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, TouchableOpacity } from "react-native";
 import { colors } from "../../constants/design_constants";
 import type ArtistSocialsItemProps from "../../models/props/artist_socials_item_props";
 

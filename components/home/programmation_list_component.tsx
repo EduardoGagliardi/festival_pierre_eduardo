@@ -7,9 +7,8 @@ import {
 	Text,
 	View,
 } from "react-native";
+import { dbUrl } from "../../constants/api_constans";
 import ProgrammationListItemComponent from "./programmation_list_item_component";
-
-const API_URL = "http://192.168.1.188:3000";
 
 const ProgrammationListComponent: React.FC = () => {
 	const [programmation, setProgrammation] = useState<any[]>([]);
@@ -22,11 +21,11 @@ const ProgrammationListComponent: React.FC = () => {
 				// Fetch all data in parallel
 				const [programmeRes, artistsRes, stagesRes, daysRes, musicTypesRes] =
 					await Promise.all([
-						fetch(`${API_URL}/programme`),
-						fetch(`${API_URL}/artists`),
-						fetch(`${API_URL}/stages`),
-						fetch(`${API_URL}/days`),
-						fetch(`${API_URL}/music_types`),
+						fetch(`${dbUrl}/programme`),
+						fetch(`${dbUrl}/artists`),
+						fetch(`${dbUrl}/stages`),
+						fetch(`${dbUrl}/days`),
+						fetch(`${dbUrl}/music_types`),
 					]);
 				const [programme, artists, stages, days, musicTypes] =
 					await Promise.all([

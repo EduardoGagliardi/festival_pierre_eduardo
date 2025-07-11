@@ -9,6 +9,7 @@ import {
 	TouchableOpacity,
 	View,
 } from "react-native";
+import { dbUrl } from "../../constants/api_constans";
 import type ProgrammationListItemProps from "../../models/props/programmation_list_item_props";
 import DateUtilsService from "../../services/date_utils_service";
 
@@ -23,7 +24,7 @@ const ProgrammationListItemComponent: React.FC<ProgrammationListItemProps> = ({
 		return null;
 	}
 	const date = dateUtils.getFullDate(day.date);
-	const imageUrl = `http://192.168.1.188:3000/images/artists/${artist.poster}`;
+	const imageUrl = `${dbUrl}/images/artists/${artist.poster}`;
 
 	const handlePress = () => {
 		router.push(`/artist/${artist.slug}`);
