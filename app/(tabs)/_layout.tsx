@@ -80,6 +80,13 @@ const TabsLayout = (): React.JSX.Element => {
 					),
 				}}
 			/>
+			<Tabs.Screen
+				name="stages"
+				options={{
+					href: null, // Hide from tab bar
+					presentation: "modal",
+				}}
+			/>
 		</Tabs>
 	);
 };
