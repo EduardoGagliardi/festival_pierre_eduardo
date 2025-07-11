@@ -1,5 +1,6 @@
-import { Feather, Ionicons } from "@expo/vector-icons";
+import { Feather, FontAwesome6, Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { createHash } from "crypto"; // Add at the top if available, otherwise use a simple hash function below
 import { ImageBackground } from "expo-image";
 import { router, useLocalSearchParams } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
@@ -21,9 +22,22 @@ import StringUtilsService from "../../services/string_utils_service";
 
 const API_URL = "http://192.168.1.188:3000";
 
+// Add a simple hash function for fallback
+function simpleHash(str: string): string {
+	let hash = 0;
+	let chr: number;
+	if (str.length === 0) return hash.toString();
+	for (let i = 0; i < str.length; i++) {
+		chr = str.charCodeAt(i);
+		hash = (hash << 5) - hash + chr;
+		hash |= 0;
+	}
+	return hash.toString();
+}
+
 const ArtistSlug = () => {
-	const { slug } = useLocalSearchParams();
-	console.log("slug param:", slug);
+	const { slug }: { slug?: string | string[] } = useLocalSearchParams();
+	const slugValue = Array.isArray(slug) ? slug[0] : slug;
 
 	const [artist, setArtist] = useState<any>(null);
 	const [programmation, setProgrammation] = useState<any[]>([]);
@@ -66,6 +80,7 @@ const ArtistSlug = () => {
 				musicTypesRes,
 				artistCountriesRes,
 				artistSocialsRes,
+				socialsRes, // <-- add this
 			] = await Promise.all([
 				fetch(`${API_URL}/artists`),
 				fetch(`${API_URL}/programme`),
@@ -74,6 +89,7 @@ const ArtistSlug = () => {
 				fetch(`${API_URL}/music_types`),
 				fetch(`${API_URL}/artists_countries`),
 				fetch(`${API_URL}/artists_socials`),
+				fetch(`${API_URL}/socials`), // <-- add this
 			]);
 			const [
 				artists,
@@ -83,6 +99,7 @@ const ArtistSlug = () => {
 				musicTypes,
 				artistCountries,
 				artistSocials,
+				socials, // <-- add this
 			] = await Promise.all([
 				artistsRes.json(),
 				programmationRes.json(),
@@ -91,13 +108,12 @@ const ArtistSlug = () => {
 				musicTypesRes.json(),
 				artistCountriesRes.json(),
 				artistSocialsRes.json(),
+				socialsRes.json(), // <-- add this
 			]);
 
 			// Find artist by slug
-			const foundArtist = artists.find((a: any) => a.slug === slug);
-			console.log("foundArtist:", foundArtist);
+			const foundArtist = artists.find((a: any) => a.slug === slugValue);
 			if (!foundArtist) {
-				console.log("foundArtist not found");
 				setArtist(null);
 				setLoading(false);
 				return;
@@ -126,16 +142,21 @@ const ArtistSlug = () => {
 				),
 			);
 
-			// Filter artist socials
+			// Filter artist socials and join with socials
 			setArtistSocials(
-				artistSocials.filter(
-					(s: any) => String(s.artistId) === String(foundArtist.id),
-				),
+				artistSocials
+					.filter((s: any) => String(s.artistId) === String(foundArtist.id))
+					.map((s: any) => ({
+						...s,
+						social: socials.find(
+							(soc: any) => String(soc.id) === String(s.socialId),
+						),
+					})),
 			);
 			setLoading(false);
 		};
 		fetchData();
-	}, [slug, setFavorite]);
+	}, [slugValue, setFavorite]);
 
 	if (loading) {
 		return (
@@ -152,9 +173,22 @@ const ArtistSlug = () => {
 		);
 	}
 
+	// Use only the first programmation entry for the card
+	const mainProg = programmation[0];
+	let dateObj: Date | undefined;
+	let dayName: string | undefined;
+	let dayNumber: string | undefined;
+	let monthName: string | undefined;
+	if (mainProg && mainProg.day) {
+		dateObj = new Date(mainProg.day.date);
+		dayName = dateObj.toLocaleDateString("fr-FR", { weekday: "long" });
+		dayNumber = dateObj.getDate().toString().padStart(2, "0");
+		monthName = dateObj.toLocaleDateString("fr-FR", { month: "long" });
+	}
+
 	return (
 		<GestureHandlerRootView>
-			<View style={{ flex: 1 }}>
+			<View style={{ flex: 1, backgroundColor: "#ededed" }}>
 				<TouchableOpacity
 					style={styles.closeIconBtn}
 					onPress={() => router.back()}
@@ -162,79 +196,198 @@ const ArtistSlug = () => {
 					<Feather name="x" style={styles.closeIcon} />
 				</TouchableOpacity>
 				<ScrollView>
-					<View>
+					{/* Artist image with pink overlay and text */}
+					<View style={{ position: "relative" }}>
 						<ImageBackground
 							source={{
-								uri: `http://192.168.1.188:3000/images/artists/${artist.poster}`,
+								uri: `${API_URL}/images/artists/${artist.poster}`,
 							}}
-							contentFit="cover"
-							style={styles.poster}
-						></ImageBackground>
-						<View style={styles.artistMusicTypeContainer}>
-							<Text style={styles.artist}>{artist?.name}</Text>
-							<View style={styles.musicTypeContainer}>
-								<Ionicons
-									name="pricetag-outline"
-									style={styles.musicTypeIcon}
-								/>
-								<Text style={styles.musicType}>
-									{artist?.music_type ? artist.music_type.name : "Type inconnu"}
+							style={{
+								width: "100%",
+								height: 450,
+								justifyContent: "flex-end",
+								marginBottom: 24,
+							}}
+							imageStyle={{ resizeMode: "contain" }}
+						>
+							<View
+								style={{
+									...StyleSheet.absoluteFillObject,
+									backgroundColor: "rgba(200,0,100,0.25)",
+									borderBottomLeftRadius: 0,
+									borderBottomRightRadius: 0,
+								}}
+							/>
+							<View style={{ padding: 24, paddingBottom: 32 }}>
+								<Text
+									style={{
+										fontFamily: fonts.subtitle,
+										fontSize: 36,
+										color: "#fff",
+										fontWeight: "bold",
+										marginBottom: 4,
+									}}
+								>
+									{artist.name}
 								</Text>
+								<View style={{ flexDirection: "row", alignItems: "center" }}>
+									<Feather name="music" size={18} color="#fff" />
+									<Text style={{ color: "#fff", fontSize: 18, marginLeft: 8 }}>
+										{artist.music_type
+											? artist.music_type.name
+											: "Type inconnu"}
+									</Text>
+								</View>
 							</View>
-						</View>
+						</ImageBackground>
 					</View>
 
-					<View style={styles.programmationContainer}>
-						<FlatList
-							data={programmation}
-							renderItem={(value) => (
-								<ArtistProgrammationItemComponent
-									programme={value.item}
-									nbItems={programmation.length}
-									index={value.index}
-								/>
-							)}
-							horizontal
-						/>
-						<TouchableOpacity
+					{/* Programmation card */}
+					{mainProg && mainProg.day && (
+						<View
 							style={{
-								...styles.favoriteIconBtn,
-								backgroundColor: isFavorite
-									? colors.ternary
-									: "rgba(200 200 200 / 1)",
+								backgroundColor: "#fff",
+								borderRadius: 12,
+								marginHorizontal: 16,
+								marginTop: -40,
+								marginBottom: 24,
+								padding: 18,
+								shadowColor: "#000",
+								shadowOffset: { width: 0, height: 2 },
+								shadowOpacity: 0.08,
+								shadowRadius: 4,
+								elevation: 2,
+								flexDirection: "row",
+								alignItems: "center",
+								justifyContent: "space-between",
 							}}
-							onPress={handleFavorite}
 						>
-							<Feather name="heart" style={styles.favoriteIcon} />
-						</TouchableOpacity>
-					</View>
-					<View style={styles.contentContainer}>
-						<Text style={styles.countries}>
-							{artistCountries.map((value) => value.country?.name).join(" / ")}
-						</Text>
-						<View style={styles.descriptionContainer}>
+							<View style={{ flex: 1 }}>
+								<Text
+									style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}
+								>
+									{dayName && dayNumber && monthName
+										? `${dayName.charAt(0).toUpperCase() + dayName.slice(1)} ${dayNumber} ${monthName}`
+										: ""}
+								</Text>
+								<View
+									style={{
+										flexDirection: "row",
+										alignItems: "center",
+										marginBottom: 4,
+									}}
+								>
+									<Feather name="clock" size={16} color="#222" />
+									<Text style={{ marginLeft: 6, fontSize: 16 }}>
+										{mainProg.time_start} → {mainProg.time_end}
+									</Text>
+								</View>
+								<View style={{ flexDirection: "row", alignItems: "center" }}>
+									<Feather name="map-pin" size={16} color="#222" />
+									<Text style={{ marginLeft: 6, fontSize: 16 }}>
+										{mainProg.stage ? mainProg.stage.name : ""}
+									</Text>
+								</View>
+							</View>
+							<TouchableOpacity
+								style={{
+									marginLeft: 12,
+									backgroundColor: "#eee",
+									borderRadius: 20,
+									padding: 6,
+								}}
+							>
+								<Feather name="heart" size={24} color="#b0b0b0" />
+							</TouchableOpacity>
+						</View>
+					)}
+
+					{/* Country and Description, Video */}
+					<View
+						style={{
+							backgroundColor: "#ededed",
+							paddingHorizontal: 16,
+							paddingTop: 8,
+							paddingBottom: 24,
+						}}
+					>
+						{artistCountries.length > 0 && (
+							<Text
+								style={{
+									color: "#e24ca0",
+									fontWeight: "bold",
+									fontSize: 18,
+									marginBottom: 8,
+								}}
+							>
+								{artistCountries
+									.map((value) => value.country?.name)
+									.join(" / ")}
+							</Text>
+						)}
+						<View style={{ marginBottom: 10 }}>
 							{artist?.description?.map((value: string) => (
-								<Text key={Math.random()} style={styles.description}>
+								<Text
+									key={simpleHash(value)}
+									style={{
+										fontSize: 15,
+										color: "#222",
+										marginBottom: 10,
+										lineHeight: 22,
+									}}
+								>
 									{value}
 								</Text>
 							))}
 						</View>
-						<View style={styles.videoContainer}>
-							<YoutubePlayer
-								height={215}
-								videoId={new StringUtilsService().getYouTubeVideoId(
-									artist?.video,
-								)}
-							/>
-						</View>
-						<View style={styles.socialsContainer}>
-							{artistSocials.map((value) => (
-								<ArtistSocialsItemComponent
-									key={Math.random()}
-									artistSocial={value}
+						{/* Video */}
+						{artist.video && (
+							<View style={{ alignItems: "center", marginVertical: 16 }}>
+								<YoutubePlayer
+									height={210}
+									width={340}
+									videoId={new StringUtilsService().getYouTubeVideoId(
+										artist.video,
+									)}
+									webViewStyle={{ borderRadius: 12, overflow: "hidden" }}
 								/>
-							))}
-						</View>
+							</View>
+						)}
+					</View>
+					{/* Socials at the very end */}
+					<View
+						style={{
+							flexDirection: "row",
+							justifyContent: "center",
+							gap: 16,
+							marginTop: 8,
+							marginBottom: 24,
+						}}
+					>
+						{artistSocials.map(
+							(value) =>
+								value.social && (
+									<TouchableOpacity
+										key={value.social.slug}
+										style={{
+											width: 50,
+											height: 50,
+											backgroundColor: "#e24ca0",
+											justifyContent: "center",
+											alignItems: "center",
+											borderRadius: 8,
+											marginHorizontal: 4,
+										}}
+										onPress={() => value.url && router.navigate(value.url)}
+									>
+										<FontAwesome6
+											name={value.social.slug}
+											size={24}
+											color="#fff"
+										/>
+									</TouchableOpacity>
+								),
+						)}
 					</View>
 				</ScrollView>
 			</View>
